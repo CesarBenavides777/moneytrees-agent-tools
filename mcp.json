@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "moneytrees": {
+      "type": "streamable-http",
+      "url": "https://moneytrees.ai/api/mcp"
+    },
+    "moneytrees-docs": {
+      "type": "streamable-http",
+      "url": "https://moneytrees.ai/api/mcp/docs"
+    }
+  }
+}

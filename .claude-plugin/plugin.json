@@ -1,0 +1,20 @@
+{
+  "name": "moneytrees",
+  "version": "0.1.0",
+  "description": "MoneyTrees MCP servers and skills: market movers, ticker lookup, the signal feed, docs search, and (on a Pro plan) watchlists, alerts and paper trades.",
+  "author": {
+    "name": "MoneyTrees",
+    "email": "support@moneytrees.ai",
+    "url": "https://moneytrees.ai"
+  },
+  "homepage": "https://moneytrees.ai/developers",
+  "repository": "https://github.com/CesarBenavides777/moneytrees-agent-tools",
+  "license": "MIT",
+  "keywords": [
+    "moneytrees",
+    "trading-signals",
+    "mcp",
+    "skills"
+  ],
+  "privacyPolicyUrl": "https://moneytrees.ai/privacy"
+}

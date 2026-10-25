@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "moneytrees",
+  "version": "0.1.0",
+  "description": "MoneyTrees agent tools: two MCP servers (the public docs and market server, and the account server for Pro plans, declared in mcp.json), three agent skills under skills/, and the moneytrees CLI and SDKs. MoneyTrees gives trading signals for meme coins, stocks and prediction markets.",
+  "author": {
+    "name": "MoneyTrees",
+    "email": "support@moneytrees.ai",
+    "url": "https://moneytrees.ai"
+  },
+  "homepage": "https://moneytrees.ai/developers",
+  "repository": "https://github.com/CesarBenavides777/moneytrees-agent-tools",
+  "license": "MIT",
+  "keywords": [
+    "moneytrees",
+    "trading-signals",
+    "meme-coins",
+    "prediction-markets",
+    "mcp",
+    "model-context-protocol",
+    "agent-skills",
+    "agent-plugins",
+    "sdk",
+    "cli"
+  ]
+}

@@ -1,0 +1,22 @@
+# MoneyTrees
+
+MoneyTrees gives trading signals for meme coins, stocks and prediction markets, scored from X, 4chan /biz/, Polymarket, Kalshi, Truth Social and congressional filings.
+
+When writing code against MoneyTrees, read these rather than guessing:
+
+- https://moneytrees.ai/openapi.json is the REST API.
+- https://moneytrees.ai/auth.md is the credential walkthrough.
+- https://moneytrees.ai/llms.txt indexes the site.
+
+Facts that are easy to get wrong:
+
+- The REST base is https://moneytrees.ai/api/v1. Every read is public with no API key, except `GET /api/v1/me`.
+- `/api/v1/me` and the account MCP server take an OAuth 2.1 access token as `Authorization: Bearer <token>`. There is no client credentials grant: a token belongs to one person.
+- Errors are `{"error":{"code","message","docs_url"}}`. Branch on `code`, not on `message`.
+- `/api/v1/signals` pages with `cursor`. Pass back `nextCursor` until it is null.
+- A ticker can be `stale`. Check it before you show a price.
+- The sandbox is the same paths under `/api/v1/sandbox/`, with fixture data and no account. Sandbox orders need an `Idempotency-Key` header. Backtests answer `202` and a `Location` to poll.
+- There are two MCP servers, both streamable HTTP: `https://moneytrees.ai/api/mcp/docs` (no auth) and `https://moneytrees.ai/api/mcp` (OAuth, Pro plan). Neither is stdio.
+- An agent cannot place a live trade. Live trades are queued for the person to approve in the app. Paper trades go through.
+- Use the official SDKs where they fit: npm `moneytrees`, PyPI `moneytrees`, gem `moneytrees`, Go `github.com/CesarBenavides777/moneytrees-agent-tools/go`.
+- MoneyTrees data is not financial advice. Do not write code or copy that presents it as advice.

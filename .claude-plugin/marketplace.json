@@ -1,0 +1,15 @@
+{
+  "name": "moneytrees",
+  "description": "MoneyTrees MCP servers and agent skills.",
+  "owner": {
+    "name": "MoneyTrees",
+    "email": "support@moneytrees.ai"
+  },
+  "plugins": [
+    {
+      "name": "moneytrees",
+      "source": "./",
+      "description": "MoneyTrees MCP servers and skills for market data, signals, watchlists, alerts and paper trades."
+    }
+  ]
+}

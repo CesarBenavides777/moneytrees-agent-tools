@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "moneytrees"
+version = "0.1.0"
+description = "Python client for MoneyTrees: market movers, ticker lookup, the signal feed, the sandbox, docs search and the docs MCP server."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "MoneyTrees", email = "support@moneytrees.ai" }]
+keywords = ["moneytrees", "trading-signals", "meme-coins", "crypto", "prediction-markets", "mcp", "sdk"]
+dependencies = []
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Office/Business :: Financial :: Investment",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://moneytrees.ai"
+Documentation = "https://moneytrees.ai/developers"
+Repository = "https://github.com/CesarBenavides777/moneytrees-agent-tools"
+Issues = "https://github.com/CesarBenavides777/moneytrees-agent-tools/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["moneytrees"]
+
+[tool.hatch.build.targets.sdist]
+include = ["moneytrees", "tests", "README.md", "LICENSE"]

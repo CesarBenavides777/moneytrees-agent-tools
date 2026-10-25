@@ -1,0 +1,61 @@
+{
+  "name": "moneytrees",
+  "version": "0.1.0",
+  "description": "CLI and TypeScript SDK for MoneyTrees: market movers, ticker lookup, the signal feed, the sandbox, docs search and the docs MCP server.",
+  "keywords": [
+    "moneytrees",
+    "trading-signals",
+    "meme-coins",
+    "crypto",
+    "stocks",
+    "prediction-markets",
+    "mcp",
+    "sdk",
+    "cli"
+  ],
+  "homepage": "https://moneytrees.ai",
+  "bugs": {
+    "url": "https://github.com/CesarBenavides777/moneytrees-agent-tools/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CesarBenavides777/moneytrees-agent-tools.git",
+    "directory": "packages/js"
+  },
+  "license": "MIT",
+  "author": "MoneyTrees <support@moneytrees.ai>",
+  "type": "module",
+  "bin": {
+    "moneytrees": "dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json && chmod +x dist/cli.js",
+    "test": "bun run build && bun test",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "bun run build"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.0",
+    "typescript": "^5.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

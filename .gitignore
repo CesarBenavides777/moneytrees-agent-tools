@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.tsbuildinfo
+__pycache__/
+*.egg-info/
+.venv/
+build/
+*.gem
+Gemfile.lock
+.DS_Store
+.abide/

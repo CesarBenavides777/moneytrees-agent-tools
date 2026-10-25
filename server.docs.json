@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.moneytrees/moneytrees-docs",
+  "title": "MoneyTrees Docs",
+  "description": "MoneyTrees docs plus public market data: top movers, tickers and recent signals.",
+  "version": "0.1.0",
+  "websiteUrl": "https://moneytrees.ai/developers",
+  "repository": {
+    "url": "https://github.com/CesarBenavides777/moneytrees-agent-tools",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://moneytrees.ai/api/mcp/docs"
+    }
+  ]
+}

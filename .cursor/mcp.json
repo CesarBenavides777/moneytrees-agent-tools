@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "moneytrees": {
+      "url": "https://moneytrees.ai/api/mcp"
+    },
+    "moneytrees-docs": {
+      "url": "https://moneytrees.ai/api/mcp/docs"
+    }
+  }
+}
